@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCarve - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="user-info">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <h3>Hi, Alex Johnson</h3>
+                    <p>Welcome back!</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="icon-btn" onclick="showComingSoon()">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </button>
+                <button class="icon-btn" onclick="showComingSoon()">
+                    <i class="fas fa-comment"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Resume Score Section -->
+        <section class="resume-score-section">
+            <div class="card resume-card">
+                <div class="resume-header">
+                    <h3>📄 Resume Score</h3>
+                    <div class="score-circle">
+                        <div class="score-text">85%</div>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>4.2/5</span>
+                </div>
+                <div class="resume-actions">
+                    <button class="btn-primary" onclick="showComingSoon()">Improve Resume</button>
+                    <button class="btn-secondary" onclick="showComingSoon()">Download</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+            <h3>🚀 Quick Actions</h3>
+            <div class="action-grid">
+                <div class="action-card" onclick="showComingSoon()">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume Creation</span>
+                </div>
+                <div class="action-card" onclick="showComingSoon()">
+                    <i class="fas fa-calendar-check"></i>
+                    <span>Resume Evaluation</span>
+                </div>
+                <div class="action-card" onclick="showComingSoon()">
+                    <i class="fas fa-users"></i>
+                    <span>Expert Connect</span>
+                </div>
+                <div class="action-card" onclick="showComingSoon()">
+                    <i class="fas fa-comments"></i>
+                    <span>Mock Interview</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending GD Topics -->
+        <section class="trending-section">
+            <h3>🔥 Trending GD Topics</h3>
+            <div class="trending-cards">
+                <div class="trending-card" onclick="showComingSoon()">
+                    <div class="trending-tag">HOT</div>
+                    <h4>AI Impact on Future Jobs</h4>
+                    <p>Discuss how artificial intelligence will reshape employment</p>
+                    <div class="participants">👥 127 participants</div>
+                </div>
+                <div class="trending-card" onclick="showComingSoon()">
+                    <div class="trending-tag">NEW</div>
+                    <h4>Sustainability in Business</h4>
+                    <p>Corporate responsibility and environmental impact</p>
+                    <div class="participants">👥 89 participants</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Mentors -->
+        <section class="mentors-section">
+            <h3>⭐ Recommended Mentors</h3>
+            <div class="mentor-cards">
+                <div class="mentor-card" onclick="showComingSoon()">
+                    <div class="mentor-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Mentor">
+                    </div>
+                    <div class="mentor-info">
+                        <h4>Rahul Sharma</h4>
+                        <p>IIM Ahmedabad • Marketing</p>
+                        <div class="rating">⭐ 4.9 (156 reviews)</div>
+                        <div class="price">₹499/session</div>
+                    </div>
+                </div>
+                <div class="mentor-card" onclick="showComingSoon()">
+                    <div class="mentor-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face" alt="Mentor">
+                    </div>
+                    <div class="mentor-info">
+                        <h4>Priya Patel</h4>
+                        <p>ISB Hyderabad • Finance</p>
+                        <div class="rating">⭐ 4.8 (203 reviews)</div>
+                        <div class="price">₹699/session</div>
+                    </div>
+                </div>
+                <div class="mentor-card" onclick="showComingSoon()">
+                    <div class="mentor-avatar">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Mentor">
+                    </div>
+                    <div class="mentor-info">
+                        <h4>Arjun Krishnan</h4>
+                        <p>IIM Bangalore • Consulting</p>
+                        <div class="rating">⭐ 4.7 (134 reviews)</div>
+                        <div class="price">₹899/session</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Podcasts -->
+        <section class="podcasts-section">
+            <h3>🎧 Trending Podcasts</h3>
+            <div class="podcast-cards">
+                <div class="podcast-card" onclick="showComingSoon()">
+                    <div class="podcast-image">🎯</div>
+                    <div class="podcast-info">
+                        <h4>Consulting Mastery</h4>
+                        <p>Case study frameworks & problem solving</p>
+                        <div class="podcast-meta">
+                            <span>🕒 45 min</span>
+                            <span>👁️ 2.3k views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcast-card" onclick="showComingSoon()">
+                    <div class="podcast-image">💰</div>
+                    <div class="podcast-info">
+                        <h4>Finance Fundamentals</h4>
+                        <p>Investment banking & corporate finance</p>
+                        <div class="podcast-meta">
+                            <span>🕒 38 min</span>
+                            <span>👁️ 1.8k views</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcast-card" onclick="showComingSoon()">
+                    <div class="podcast-image">📈</div>
+                    <div class="podcast-info">
+                        <h4>Marketing Insights</h4>
+                        <p>Digital marketing & brand strategy</p>
+                        <div class="podcast-meta">
+                            <span>🕒 42 min</span>
+                            <span>👁️ 1.5k views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Reads -->
+        <section class="quick-reads-section">
+            <h3>📚 Quick Reads - MBA Concepts</h3>
+            <div class="reads-grid">
+                <div class="read-card" onclick="showComingSoon()">
+                    <div class="read-category">Strategy</div>
+                    <h4>Porter's Five Forces</h4>
+                    <p>5 min read</p>
+                </div>
+                <div class="read-card" onclick="showComingSoon()">
+                    <div class="read-category">Finance</div>
+                    <h4>DCF Valuation</h4>
+                    <p>7 min read</p>
+                </div>
+                <div class="read-card" onclick="showComingSoon()">
+                    <div class="read-category">Marketing</div>
+                    <h4>4P Marketing Mix</h4>
+                    <p>4 min read</p>
+                </div>
+                <div class="read-card" onclick="showComingSoon()">
+                    <div class="read-category">Operations</div>
+                    <h4>Lean Six Sigma</h4>
+                    <p>6 min read</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Booking -->
+        <section class="services-section">
+            <h3>💼 Book Your Sessions</h3>
+            <div class="service-cards">
+                <div class="service-card" onclick="showComingSoon()">
+                    <div class="service-icon">🎯</div>
+                    <div class="service-details">
+                        <h4>Resume Mentoring</h4>
+                        <p>1-on-1 resume review & improvement</p>
+                        <div class="service-price">₹399/session</div>
+                    </div>
+                </div>
+                <div class="service-card" onclick="showComingSoon()">
+                    <div class="service-icon">🗣️</div>
+                    <div class="service-details">
+                        <h4>Mock Interview</h4>
+                        <p>Practice with industry experts</p>
+                        <div class="service-price">₹599/session</div>
+                    </div>
+                </div>
+                <div class="service-card" onclick="showComingSoon()">
+                    <div class="service-icon">👥</div>
+                    <div class="service-details">
+                        <h4>GD Practice</h4>
+                        <p>Group discussion simulation</p>
+                        <div class="service-price">₹299/session</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Portal -->
+        <section class="jobs-section">
+            <h3>💼 Latest Opportunities</h3>
+            <div class="job-cards">
+                <div class="job-card" onclick="showComingSoon()">
+                    <div class="job-header">
+                        <h4>Business Analyst Intern</h4>
+                        <div class="job-type">Internship</div>
+                    </div>
+                    <p class="company">McKinsey & Company</p>
+                    <div class="job-details">
+                        <span>📍 Mumbai</span>
+                        <span>💰 ₹25k/month</span>
+                        <span>⏰ 2 days ago</span>
+                    </div>
+                </div>
+                <div class="job-card" onclick="showComingSoon()">
+                    <div class="job-header">
+                        <h4>Marketing Associate</h4>
+                        <div class="job-type">Full-time</div>
+                    </div>
+                    <p class="company">Unilever</p>
+                    <div class="job-details">
+                        <span>📍 Bangalore</span>
+                        <span>💰 ₹8-12 LPA</span>
+                        <span>⏰ 1 day ago</span>
+                    </div>
+                </div>
+                <div class="job-card" onclick="showComingSoon()">
+                    <div class="job-header">
+                        <h4>Finance Analyst</h4>
+                        <div class="job-type">Live Project</div>
+                    </div>
+                    <p class="company">Goldman Sachs</p>
+                    <div class="job-details">
+                        <span>📍 Remote</span>
+                        <span>💰 ₹15k stipend</span>
+                        <span>⏰ 3 hours ago</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Feedback -->
+        <section class="feedback-section">
+            <h3>💬 Student Feedback</h3>
+            <div class="feedback-cards">
+                <div class="feedback-card">
+                    <div class="feedback-header">
+                        <div class="student-avatar">AS</div>
+                        <div class="student-info">
+                            <h4>Ankit Singh</h4>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p>"CareerCarve helped me crack my dream consulting job at BCG. The mock interviews were game-changing!"</p>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-header">
+                        <div class="student-avatar">PG</div>
+                        <div class="student-info">
+                            <h4>Pooja Gupta</h4>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p>"Resume mentoring session improved my profile score by 40%. Landed 3 interview calls within a week!"</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="nav-item active" onclick="showComingSoon()">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </div>
+        <div class="nav-item" onclick="showComingSoon()">
+            <i class="fas fa-calendar"></i>
+            <span>Schedules</span>
+        </div>
+        <div class="nav-item" onclick="showComingSoon()">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Learning Hub</span>
+        </div>
+        <div class="nav-item" onclick="showComingSoon()">
+            <i class="fas fa-star"></i>
+            <span>Top Mentors</span>
+        </div>
+    </nav>
+
+    <!-- Coming Soon Modal -->
+    <div id="comingSoonModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="coming-soon-icon">🚀</div>
+                <h2>Coming Soon!</h2>
+                <p>This feature is under development and will be available soon.</p>
+                <button class="btn-primary" onclick="closeModal()">Got it!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
