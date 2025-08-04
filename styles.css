@@ -11,6 +11,17 @@ body {
     min-height: 100vh;
     color: #333;
     line-height: 1.6;
+    /* Force mobile view */
+    max-width: 414px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Force mobile viewport */
+html {
+    max-width: 414px;
+    margin: 0 auto;
+    background: #f0f0f0;
 }
 
 /* Header Styles */
@@ -22,14 +33,14 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 414px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .user-info {
@@ -99,8 +110,7 @@ body {
 
 /* Main Content */
 .main-content {
-    max-width: 414px;
-    margin: 0 auto;
+    width: 100%;
     padding: 20px;
     padding-bottom: 100px;
 }
@@ -110,12 +120,38 @@ section {
     margin-bottom: 25px;
 }
 
-section h3 {
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header h3 {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
     color: white;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+.view-all-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.view-all-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
 }
 
 /* Card Styles */
@@ -267,13 +303,13 @@ section h3 {
 }
 
 /* Trending Cards */
-.trending-cards {
+.trending-cards, .gk-cards {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.trending-card {
+.trending-card, .gk-card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 12px;
@@ -284,12 +320,12 @@ section h3 {
     position: relative;
 }
 
-.trending-card:hover {
+.trending-card:hover, .gk-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.trending-tag {
+.trending-tag, .gk-tag {
     position: absolute;
     top: -5px;
     right: 15px;
@@ -301,19 +337,23 @@ section h3 {
     font-weight: 600;
 }
 
-.trending-card h4 {
+.gk-tag {
+    background: #2ed573;
+}
+
+.trending-card h4, .gk-card h4 {
     font-size: 16px;
     margin-bottom: 8px;
     color: #333;
 }
 
-.trending-card p {
+.trending-card p, .gk-card p {
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
 }
 
-.participants {
+.participants, .difficulty {
     font-size: 12px;
     color: #667eea;
     font-weight: 500;
@@ -467,6 +507,10 @@ section h3 {
     border-radius: 12px;
     margin-bottom: 8px;
     display: inline-block;
+}
+
+.read-category.hr {
+    background: #ff6b6b;
 }
 
 .read-card h4 {
@@ -639,8 +683,8 @@ section h3 {
 .bottom-nav {
     position: fixed;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     display: flex;
@@ -648,8 +692,8 @@ section h3 {
     padding: 12px 0;
     box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
     max-width: 414px;
-    margin: 0 auto;
     z-index: 100;
 }
 
@@ -766,8 +810,16 @@ section h3 {
     to { transform: translateY(0) translateY(-50%); opacity: 1; }
 }
 
-/* Responsive Design */
+/* Mobile-specific optimizations */
 @media (max-width: 414px) {
+    body {
+        max-width: 100%;
+    }
+    
+    html {
+        max-width: 100%;
+    }
+    
     .main-content {
         padding: 15px;
     }
@@ -776,7 +828,7 @@ section h3 {
         padding: 0 5px;
     }
     
-    section h3 {
+    .section-header h3 {
         font-size: 16px;
     }
     

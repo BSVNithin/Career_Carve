@@ -43,6 +43,8 @@ A modern, intuitive mobile app home screen for CareerCarve, designed specificall
 - **Finance**: DCF Valuation (7 min read)
 - **Marketing**: 4P Marketing Mix (4 min read)
 - **Operations**: Lean Six Sigma (6 min read)
+- **HR**: Talent Management (5 min read)
+- **HR**: Performance Appraisal (6 min read)
 
 ### 💼 Book Your Sessions
 - **Resume Mentoring**: 1-on-1 review (₹399/session)
@@ -57,6 +59,11 @@ A modern, intuitive mobile app home screen for CareerCarve, designed specificall
 ### 💬 Student Feedback
 - **Ankit Singh**: "CareerCarve helped me crack my dream consulting job at BCG."
 - **Pooja Gupta**: "Resume mentoring improved my profile score by 40%."
+
+### 🧠 GK Topics
+- **Current Affairs 2024**: Latest political, economic & international developments (Medium Level)
+- **Indian History & Culture**: Ancient civilizations, freedom struggle & heritage (Basic Level)
+- **Science & Technology**: Latest innovations, space missions & breakthroughs (Advanced Level)
 
 ### 🧭 Bottom Navigation
 - **Home**: Current active tab
@@ -140,6 +147,7 @@ A modern, intuitive mobile app home screen for CareerCarve, designed specificall
 - **Resume Score**: Animated counting from 0 to 85%
 - **Touch Feedback**: Scale effects on touch
 - **Scroll Animations**: Elements appear as you scroll
+- **View All Buttons**: Every section has "View All" functionality
 
 ### 📊 Real-time Features
 - **Connection Status**: Online/offline detection

@@ -31,7 +31,7 @@ function initializeApp() {
 
 // Add loading animations to cards
 function addLoadingAnimations() {
-    const cards = document.querySelectorAll('.card, .action-card, .trending-card, .mentor-card, .podcast-card, .read-card, .service-card, .job-card, .feedback-card');
+    const cards = document.querySelectorAll('.card, .action-card, .trending-card, .gk-card, .mentor-card, .podcast-card, .read-card, .service-card, .job-card, .feedback-card');
     
     cards.forEach((card, index) => {
         card.style.opacity = '0';
@@ -114,6 +114,12 @@ function addClickListeners() {
     navItems.forEach(item => {
         item.addEventListener('click', handleNavigation);
     });
+    
+    // View All buttons
+    const viewAllBtns = document.querySelectorAll('.view-all-btn');
+    viewAllBtns.forEach(btn => {
+        btn.addEventListener('click', handleViewAllClick);
+    });
 }
 
 // Handle notification button click
@@ -157,10 +163,26 @@ function handleNavigation(e) {
     trackEvent('navigation_clicked', e.currentTarget.textContent.trim());
 }
 
+// Handle View All button clicks
+function handleViewAllClick(e) {
+    // Add click animation
+    e.currentTarget.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+        e.currentTarget.style.transform = 'scale(1)';
+    }, 150);
+    
+    // Get section context
+    const section = e.currentTarget.closest('section');
+    const sectionTitle = section.querySelector('h3').textContent;
+    
+    showComingSoon();
+    trackEvent('view_all_clicked', sectionTitle);
+}
+
 // Initialize touch interactions for better mobile experience
 function initializeTouchInteractions() {
     // Add touch feedback to all clickable elements
-    const clickableElements = document.querySelectorAll('button, .card, .action-card, .trending-card, .mentor-card, .podcast-card, .read-card, .service-card, .job-card, .nav-item');
+    const clickableElements = document.querySelectorAll('button, .card, .action-card, .trending-card, .gk-card, .mentor-card, .podcast-card, .read-card, .service-card, .job-card, .nav-item');
     
     clickableElements.forEach(element => {
         // Touch start - add pressed state
@@ -211,7 +233,7 @@ function initializeScrollAnimations() {
 
 // Add haptic feedback simulation
 function addHapticFeedback() {
-    const interactiveElements = document.querySelectorAll('button, .card, .action-card, .nav-item');
+    const interactiveElements = document.querySelectorAll('button, .card, .action-card, .gk-card, .nav-item');
     
     interactiveElements.forEach(element => {
         element.addEventListener('click', function() {

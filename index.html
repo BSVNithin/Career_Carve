@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>CareerCarve - Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -60,7 +60,10 @@
 
         <!-- Quick Actions -->
         <section class="quick-actions">
-            <h3>🚀 Quick Actions</h3>
+            <div class="section-header">
+                <h3>🚀 Quick Actions</h3>
+                <button class="view-all-btn" onclick="showComingSoon()">View All</button>
+            </div>
             <div class="action-grid">
                 <div class="action-card" onclick="showComingSoon()">
                     <i class="fas fa-file-alt"></i>
@@ -83,7 +86,10 @@
 
         <!-- Trending GD Topics -->
         <section class="trending-section">
-            <h3>🔥 Trending GD Topics</h3>
+            <div class="section-header">
+                <h3>🔥 Trending GD Topics</h3>
+                <button class="view-all-btn" onclick="showComingSoon()">View All</button>
+            </div>
             <div class="trending-cards">
                 <div class="trending-card" onclick="showComingSoon()">
                     <div class="trending-tag">HOT</div>
@@ -102,7 +108,10 @@
 
         <!-- Recommended Mentors -->
         <section class="mentors-section">
-            <h3>⭐ Recommended Mentors</h3>
+            <div class="section-header">
+                <h3>⭐ Recommended Mentors</h3>
+                <button class="view-all-btn" onclick="showComingSoon()">View All</button>
+            </div>
             <div class="mentor-cards">
                 <div class="mentor-card" onclick="showComingSoon()">
                     <div class="mentor-avatar">
@@ -142,7 +151,10 @@
 
         <!-- Trending Podcasts -->
         <section class="podcasts-section">
-            <h3>🎧 Trending Podcasts</h3>
+            <div class="section-header">
+                <h3>🎧 Trending Podcasts</h3>
+                <button class="view-all-btn" onclick="showComingSoon()">View All</button>
+            </div>
             <div class="podcast-cards">
                 <div class="podcast-card" onclick="showComingSoon()">
                     <div class="podcast-image">🎯</div>
@@ -182,7 +194,10 @@
 
         <!-- Quick Reads -->
         <section class="quick-reads-section">
-            <h3>📚 Quick Reads - MBA Concepts</h3>
+            <div class="section-header">
+                <h3>📚 Quick Reads - MBA Concepts</h3>
+                <button class="view-all-btn" onclick="showComingSoon()">View All</button>
+            </div>
             <div class="reads-grid">
                 <div class="read-card" onclick="showComingSoon()">
                     <div class="read-category">Strategy</div>
@@ -204,12 +219,53 @@
                     <h4>Lean Six Sigma</h4>
                     <p>6 min read</p>
                 </div>
+                <div class="read-card" onclick="showComingSoon()">
+                    <div class="read-category hr">HR</div>
+                    <h4>Talent Management</h4>
+                    <p>5 min read</p>
+                </div>
+                <div class="read-card" onclick="showComingSoon()">
+                    <div class="read-category hr">HR</div>
+                    <h4>Performance Appraisal</h4>
+                    <p>6 min read</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GK Topics -->
+        <section class="gk-section">
+            <div class="section-header">
+                <h3>🧠 GK Topics</h3>
+                <button class="view-all-btn" onclick="showComingSoon()">View All</button>
+            </div>
+            <div class="gk-cards">
+                <div class="gk-card" onclick="showComingSoon()">
+                    <div class="gk-tag">FRESH</div>
+                    <h4>Current Affairs 2024</h4>
+                    <p>Latest developments in politics, economy & international relations</p>
+                    <div class="difficulty">📊 Medium Level</div>
+                </div>
+                <div class="gk-card" onclick="showComingSoon()">
+                    <div class="gk-tag">POPULAR</div>
+                    <h4>Indian History & Culture</h4>
+                    <p>Ancient civilizations, freedom struggle & cultural heritage</p>
+                    <div class="difficulty">📚 Basic Level</div>
+                </div>
+                <div class="gk-card" onclick="showComingSoon()">
+                    <div class="gk-tag">TRENDING</div>
+                    <h4>Science & Technology</h4>
+                    <p>Latest innovations, space missions & technological breakthroughs</p>
+                    <div class="difficulty">🔬 Advanced Level</div>
+                </div>
             </div>
         </section>
 
         <!-- Services Booking -->
         <section class="services-section">
-            <h3>💼 Book Your Sessions</h3>
+            <div class="section-header">
+                <h3>💼 Book Your Sessions</h3>
+                <button class="view-all-btn" onclick="showComingSoon()">View All</button>
+            </div>
             <div class="service-cards">
                 <div class="service-card" onclick="showComingSoon()">
                     <div class="service-icon">🎯</div>
@@ -240,7 +296,10 @@
 
         <!-- Job Portal -->
         <section class="jobs-section">
-            <h3>💼 Latest Opportunities</h3>
+            <div class="section-header">
+                <h3>💼 Latest Opportunities</h3>
+                <button class="view-all-btn" onclick="showComingSoon()">View All</button>
+            </div>
             <div class="job-cards">
                 <div class="job-card" onclick="showComingSoon()">
                     <div class="job-header">
@@ -283,7 +342,10 @@
 
         <!-- Student Feedback -->
         <section class="feedback-section">
-            <h3>💬 Student Feedback</h3>
+            <div class="section-header">
+                <h3>💬 Student Feedback</h3>
+                <button class="view-all-btn" onclick="showComingSoon()">View All</button>
+            </div>
             <div class="feedback-cards">
                 <div class="feedback-card">
                     <div class="feedback-header">
