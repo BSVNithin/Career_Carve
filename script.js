@@ -48,8 +48,7 @@ function addLoadingAnimations() {
 // Show coming soon modal
 function showComingSoon() {
     const modal = document.getElementById('comingSoonModal');
-    modal.style.display = 'flex'; // Use flex to center the modal
-    modal.classList.remove('hidden');
+    modal.style.display = 'block';
     
     // Add vibration if supported
     if (navigator.vibrate) {
@@ -67,7 +66,6 @@ function showComingSoon() {
 function closeModal() {
     const modal = document.getElementById('comingSoonModal');
     modal.style.display = 'none';
-    modal.classList.add('hidden');
     
     // Restore body scroll
     document.body.style.overflow = 'auto';

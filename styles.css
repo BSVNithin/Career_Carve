@@ -7,9 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    background: #f5f5f5;
     min-height: 100vh;
     color: #333;
     line-height: 1.6;
@@ -17,19 +15,12 @@ body {
     margin: 0 auto;
 }
 
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 /* Header Styles */
 .header {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     padding: 15px 20px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -52,27 +43,25 @@ body {
 .avatar {
     width: 45px;
     height: 45px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: #e0e0e0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #666;
     font-size: 18px;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 .user-details h3 {
     font-size: 16px;
     font-weight: 600;
-    color: white;
+    color: #333;
     margin-bottom: 2px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .user-details p {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #666;
 }
 
 .header-actions {
@@ -82,36 +71,32 @@ body {
 
 .icon-btn {
     position: relative;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: none;
+    border: none;
     font-size: 20px;
-    color: white;
+    color: #667eea;
     cursor: pointer;
     padding: 8px;
     border-radius: 50%;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .icon-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(102, 126, 234, 0.1);
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .badge {
     position: absolute;
     top: 0;
     right: 0;
-    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    background: #ff4757;
     color: white;
     font-size: 10px;
     padding: 2px 6px;
     border-radius: 10px;
     min-width: 18px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.4);
 }
 
 /* Main Content */
@@ -131,53 +116,48 @@ section h3 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: white;
+    color: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .view-all {
     font-size: 12px;
     font-weight: 500;
-    color: white;
+    color: #007AFF;
     cursor: pointer;
     padding: 4px 8px;
     border-radius: 12px;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 122, 255, 0.1);
 }
 
 .view-all:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 122, 255, 0.2);
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Card Styles */
 .card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Resume Score Section */
 .resume-card {
-    background: rgba(255, 255, 255, 0.25);
-    color: white;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
 }
 
 .resume-header {
@@ -188,21 +168,20 @@ section h3 {
 }
 
 .resume-header h3 {
-    color: white;
+    color: #333;
     margin: 0;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: none;
 }
 
 .score-circle {
     width: 60px;
     height: 60px;
-    border: 3px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid #e0e0e0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background: rgba(255, 255, 255, 0.1);
 }
 
 .score-circle::before {
@@ -212,23 +191,15 @@ section h3 {
     height: 100%;
     border-radius: 50%;
     border: 3px solid transparent;
-    border-top: 3px solid #4facfe;
-    border-right: 3px solid #4facfe;
-    border-bottom: 3px solid #4facfe;
+    border-top: 3px solid #007AFF;
+    border-right: 3px solid #007AFF;
+    border-bottom: 3px solid #007AFF;
     transform: rotate(306deg); /* 85% of 360deg */
-    animation: scoreGlow 2s ease-in-out infinite alternate;
-}
-
-@keyframes scoreGlow {
-    0% { filter: drop-shadow(0 0 5px #4facfe); }
-    100% { filter: drop-shadow(0 0 15px #4facfe); }
 }
 
 .score-text {
     font-size: 14px;
     font-weight: 700;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .star-rating {
@@ -240,13 +211,11 @@ section h3 {
 
 .star-rating i {
     color: #ffd700;
-    filter: drop-shadow(0 2px 4px rgba(255, 215, 0, 0.3));
 }
 
 .star-rating span {
     font-size: 14px;
     margin-left: 5px;
-    color: white;
 }
 
 .resume-actions {
@@ -266,26 +235,20 @@ section h3 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: #007AFF;
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    border: 1px solid #007AFF;
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+    background: #f0f0f0;
+    color: #333;
+    border: 1px solid #e0e0e0;
 }
 
 .btn-primary:hover, .btn-secondary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Quick Actions */
@@ -296,36 +259,32 @@ section h3 {
 }
 
 .action-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .action-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .action-card i {
     font-size: 24px;
-    color: #4facfe;
+    color: #667eea;
     margin-bottom: 8px;
     display: block;
-    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.3));
 }
 
 .action-card span {
     font-size: 14px;
     font-weight: 500;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
 }
 
 /* Trending Cards */
@@ -336,54 +295,49 @@ section h3 {
 }
 
 .trending-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
 }
 
 .trending-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .trending-tag {
     position: absolute;
     top: -5px;
     right: 15px;
-    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    background: #ff4757;
     color: white;
     font-size: 10px;
     padding: 4px 8px;
     border-radius: 10px;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
 }
 
 .trending-card h4 {
     font-size: 16px;
     margin-bottom: 8px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
 }
 
 .trending-card p {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #666;
     margin-bottom: 10px;
 }
 
 .participants {
     font-size: 12px;
-    color: #4facfe;
+    color: #667eea;
     font-weight: 500;
-    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.3));
 }
 
 /* Mentor Cards */
@@ -394,12 +348,11 @@ section h3 {
 }
 
 .mentor-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -407,9 +360,8 @@ section h3 {
 }
 
 .mentor-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .mentor-avatar {
@@ -418,8 +370,6 @@ section h3 {
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .mentor-avatar img {
@@ -431,27 +381,25 @@ section h3 {
 .mentor-info h4 {
     font-size: 16px;
     margin-bottom: 4px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
 }
 
 .mentor-info p {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #666;
     margin-bottom: 6px;
 }
 
 .rating {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.9);
+    color: #333;
     margin-bottom: 6px;
 }
 
 .price {
     font-size: 14px;
-    color: #4facfe;
+    color: #667eea;
     font-weight: 600;
-    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.3));
 }
 
 /* Podcast Cards */
@@ -462,12 +410,11 @@ section h3 {
 }
 
 .podcast-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -475,35 +422,32 @@ section h3 {
 }
 
 .podcast-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .podcast-image {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: #e0e0e0;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
     flex-shrink: 0;
-    color: white;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    color: #666;
 }
 
 .podcast-info h4 {
     font-size: 15px;
     margin-bottom: 4px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
 }
 
 .podcast-info p {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #666;
     margin-bottom: 8px;
 }
 
@@ -511,7 +455,7 @@ section h3 {
     display: flex;
     gap: 10px;
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #888;
 }
 
 /* Quick Reads */
@@ -522,44 +466,40 @@ section h3 {
 }
 
 .read-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
 }
 
 .read-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .read-category {
-    background: linear-gradient(135deg, #f093fb, #f5576c);
+    background: #667eea;
     color: white;
     font-size: 10px;
     padding: 4px 8px;
     border-radius: 12px;
     margin-bottom: 8px;
     display: inline-block;
-    box-shadow: 0 2px 8px rgba(240, 147, 251, 0.4);
 }
 
 .read-card h4 {
     font-size: 14px;
     margin-bottom: 4px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
 }
 
 .read-card p {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #666;
 }
 
 /* Service Cards */
@@ -570,12 +510,11 @@ section h3 {
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -584,9 +523,8 @@ section h3 {
 }
 
 .service-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .service-icon {
@@ -597,21 +535,19 @@ section h3 {
 .service-details h4 {
     font-size: 15px;
     margin-bottom: 4px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
 }
 
 .service-details p {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #666;
     margin-bottom: 6px;
 }
 
 .service-price {
     font-size: 14px;
-    color: #4facfe;
+    color: #667eea;
     font-weight: 600;
-    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.3));
 }
 
 /* Job Cards */
@@ -622,20 +558,18 @@ section h3 {
 }
 
 .job-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .job-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .job-header {
@@ -647,24 +581,22 @@ section h3 {
 
 .job-header h4 {
     font-size: 16px;
-    color: white;
+    color: #333;
     flex: 1;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .job-type {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: #667eea;
     color: white;
     font-size: 10px;
     padding: 4px 8px;
     border-radius: 10px;
     margin-left: 10px;
-    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
 }
 
 .company {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #666;
     margin-bottom: 10px;
     font-weight: 500;
 }
@@ -674,7 +606,7 @@ section h3 {
     flex-wrap: wrap;
     gap: 10px;
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #888;
 }
 
 /* Feedback Cards */
@@ -685,12 +617,11 @@ section h3 {
 }
 
 .feedback-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .feedback-header {
@@ -702,8 +633,8 @@ section h3 {
 .student-avatar {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #f093fb, #f5576c);
-    color: white;
+    background: #e0e0e0;
+    color: #666;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -711,19 +642,17 @@ section h3 {
     font-size: 14px;
     font-weight: 600;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
 }
 
 .student-info h4 {
     font-size: 14px;
     margin-bottom: 2px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
 }
 
 .feedback-card p {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.9);
+    color: #555;
     line-height: 1.5;
     font-style: italic;
 }
@@ -734,13 +663,13 @@ section h3 {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-around;
     padding: 12px 0;
-    box-shadow: 0 -8px 32px rgba(31, 38, 135, 0.37);
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     max-width: 414px;
     margin: 0 auto;
     z-index: 100;
@@ -756,18 +685,14 @@ section h3 {
     border-radius: 8px;
     transition: all 0.3s ease;
     min-width: 60px;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .nav-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
+    background: rgba(102, 126, 234, 0.1);
 }
 
 .nav-item.active {
-    color: #4facfe;
-    background: rgba(79, 172, 254, 0.2);
-    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+    color: #667eea;
 }
 
 .nav-item i {
@@ -790,92 +715,66 @@ section h3 {
     background: rgba(0, 0, 0, 0.8);
     z-index: 1000;
     animation: fadeIn 0.3s ease;
-    /* Flexbox centering */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal.hidden {
-    display: none;
 }
 
 .modal-content {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: white;
+    margin: 50% auto;
     padding: 0;
-    border-radius: 20px;
+    border-radius: 15px;
     width: 90%;
-    max-width: 320px;
+    max-width: 300px;
     position: relative;
     animation: slideUp 0.3s ease;
-    box-shadow: 0 20px 60px rgba(31, 38, 135, 0.5);
+    transform: translateY(-50%);
 }
 
 .close {
     position: absolute;
-    top: 15px;
-    right: 20px;
+    top: 10px;
+    right: 15px;
     font-size: 24px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease;
-}
-
-.close:hover {
-    color: white;
-    transform: scale(1.1);
+    color: #999;
 }
 
 .modal-body {
-    padding: 40px 30px 30px;
+    padding: 30px 20px;
     text-align: center;
 }
 
 .coming-soon-icon {
     font-size: 48px;
-    margin-bottom: 20px;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
+    margin-bottom: 15px;
 }
 
 .modal-body h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #333;
 }
 
 .modal-body p {
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 25px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
     line-height: 1.5;
 }
 
 .modal .btn-primary {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: #667eea;
     color: white;
-    padding: 12px 30px;
+    padding: 12px 24px;
     border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 600;
+    border-radius: 8px;
+    font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
 .modal .btn-primary:hover {
-    background: linear-gradient(135deg, #5a67d8, #6b4e9d);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    background: #5a67d8;
+    transform: translateY(-1px);
 }
 
 /* Animations */
@@ -885,8 +784,8 @@ section h3 {
 }
 
 @keyframes slideUp {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from { transform: translateY(50px) translateY(-50%); opacity: 0; }
+    to { transform: translateY(0) translateY(-50%); opacity: 1; }
 }
 
 /* Mobile-First Design - No responsive breakpoints needed */
@@ -903,7 +802,7 @@ html {
     height: 20px;
     border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
-    border-top-color: #4facfe;
+    border-top-color: #fff;
     animation: spin 1s ease-in-out infinite;
 }
 
