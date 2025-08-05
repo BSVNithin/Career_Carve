@@ -7,9 +7,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    background: #f8f9fa;
     min-height: 100vh;
     color: #333;
     line-height: 1.6;
@@ -17,19 +15,11 @@ body {
     margin: 0 auto;
 }
 
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 /* Header Styles */
 .header {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 15px 20px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -52,14 +42,14 @@ body {
 .avatar {
     width: 45px;
     height: 45px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 18px;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
 }
 
 .user-details h3 {
@@ -72,7 +62,7 @@ body {
 
 .user-details p {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .header-actions {
@@ -131,52 +121,48 @@ section h3 {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: white;
+    color: #2c3e50;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .view-all {
     font-size: 12px;
     font-weight: 500;
-    color: white;
+    color: #667eea;
     cursor: pointer;
     padding: 4px 8px;
     border-radius: 12px;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(102, 126, 234, 0.2);
 }
 
 .view-all:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(102, 126, 234, 0.2);
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
 }
 
 /* Card Styles */
 .card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: white;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 /* Resume Score Section */
 .resume-card {
-    background: rgba(255, 255, 255, 0.25);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
 
@@ -266,10 +252,10 @@ section h3 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
 }
 
 .btn-secondary {
@@ -296,29 +282,27 @@ section h3 {
 }
 
 .action-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(240, 147, 251, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
+    color: white;
 }
 
 .action-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 35px rgba(240, 147, 251, 0.4);
 }
 
 .action-card i {
     font-size: 24px;
-    color: #4facfe;
+    color: white;
     margin-bottom: 8px;
     display: block;
-    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.3));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .action-card span {
@@ -336,12 +320,10 @@ section h3 {
 }
 
 .trending-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(168, 237, 234, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -349,8 +331,7 @@ section h3 {
 
 .trending-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 35px rgba(168, 237, 234, 0.4);
 }
 
 .trending-tag {
@@ -369,21 +350,20 @@ section h3 {
 .trending-card h4 {
     font-size: 16px;
     margin-bottom: 8px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #2c3e50;
+    font-weight: 600;
 }
 
 .trending-card p {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #5a6c7d;
     margin-bottom: 10px;
 }
 
 .participants {
     font-size: 12px;
-    color: #4facfe;
+    color: #667eea;
     font-weight: 500;
-    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.3));
 }
 
 /* Mentor Cards */
@@ -394,12 +374,10 @@ section h3 {
 }
 
 .mentor-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(255, 236, 210, 0.4);
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -408,8 +386,7 @@ section h3 {
 
 .mentor-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 35px rgba(255, 236, 210, 0.5);
 }
 
 .mentor-avatar {
@@ -419,7 +396,7 @@ section h3 {
     overflow: hidden;
     flex-shrink: 0;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 .mentor-avatar img {
@@ -431,27 +408,26 @@ section h3 {
 .mentor-info h4 {
     font-size: 16px;
     margin-bottom: 4px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #2c3e50;
+    font-weight: 600;
 }
 
 .mentor-info p {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #5a6c7d;
     margin-bottom: 6px;
 }
 
 .rating {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
     margin-bottom: 6px;
 }
 
 .price {
     font-size: 14px;
-    color: #4facfe;
+    color: #667eea;
     font-weight: 600;
-    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.3));
 }
 
 /* Podcast Cards */
@@ -462,12 +438,10 @@ section h3 {
 }
 
 .podcast-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(210, 153, 194, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
@@ -476,8 +450,7 @@ section h3 {
 
 .podcast-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 35px rgba(210, 153, 194, 0.4);
 }
 
 .podcast-image {
@@ -497,13 +470,13 @@ section h3 {
 .podcast-info h4 {
     font-size: 15px;
     margin-bottom: 4px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #2c3e50;
+    font-weight: 600;
 }
 
 .podcast-info p {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #5a6c7d;
     margin-bottom: 8px;
 }
 
@@ -511,7 +484,7 @@ section h3 {
     display: flex;
     gap: 10px;
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #7a8597;
 }
 
 /* Quick Reads */
@@ -522,32 +495,30 @@ section h3 {
 }
 
 .read-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(137, 247, 254, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
+    color: white;
 }
 
 .read-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 35px rgba(137, 247, 254, 0.4);
 }
 
 .read-category {
-    background: linear-gradient(135deg, #f093fb, #f5576c);
+    background: rgba(255, 255, 255, 0.3);
     color: white;
     font-size: 10px;
     padding: 4px 8px;
     border-radius: 12px;
     margin-bottom: 8px;
     display: inline-block;
-    box-shadow: 0 2px 8px rgba(240, 147, 251, 0.4);
+    backdrop-filter: blur(10px);
 }
 
 .read-card h4 {
@@ -555,11 +526,12 @@ section h3 {
     margin-bottom: 4px;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
 }
 
 .read-card p {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 /* Service Cards */
@@ -570,23 +542,21 @@ section h3 {
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(250, 112, 154, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     gap: 15px;
     align-items: center;
+    color: white;
 }
 
 .service-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 35px rgba(250, 112, 154, 0.4);
 }
 
 .service-icon {
@@ -599,19 +569,20 @@ section h3 {
     margin-bottom: 4px;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
 }
 
 .service-details p {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 6px;
 }
 
 .service-price {
     font-size: 14px;
-    color: #4facfe;
+    color: white;
     font-weight: 600;
-    filter: drop-shadow(0 2px 4px rgba(79, 172, 254, 0.3));
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Job Cards */
@@ -622,20 +593,17 @@ section h3 {
 }
 
 .job-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(161, 196, 253, 0.3);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .job-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(31, 38, 135, 0.5);
-    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 15px 35px rgba(161, 196, 253, 0.4);
 }
 
 .job-header {
@@ -647,9 +615,9 @@ section h3 {
 
 .job-header h4 {
     font-size: 16px;
-    color: white;
+    color: #2c3e50;
     flex: 1;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
 }
 
 .job-type {
@@ -664,7 +632,7 @@ section h3 {
 
 .company {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #5a6c7d;
     margin-bottom: 10px;
     font-weight: 500;
 }
@@ -674,7 +642,7 @@ section h3 {
     flex-wrap: wrap;
     gap: 10px;
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.7);
+    color: #7a8597;
 }
 
 /* Feedback Cards */
@@ -685,12 +653,10 @@ section h3 {
 }
 
 .feedback-card {
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(251, 194, 235, 0.3);
 }
 
 .feedback-header {
@@ -702,7 +668,7 @@ section h3 {
 .student-avatar {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #f093fb, #f5576c);
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     border-radius: 50%;
     display: flex;
@@ -711,19 +677,19 @@ section h3 {
     font-size: 14px;
     font-weight: 600;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 .student-info h4 {
     font-size: 14px;
     margin-bottom: 2px;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #2c3e50;
+    font-weight: 600;
 }
 
 .feedback-card p {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.9);
+    color: #5a6c7d;
     line-height: 1.5;
     font-style: italic;
 }
@@ -734,13 +700,11 @@ section h3 {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     justify-content: space-around;
     padding: 12px 0;
-    box-shadow: 0 -8px 32px rgba(31, 38, 135, 0.37);
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 -8px 32px rgba(102, 126, 234, 0.3);
     max-width: 414px;
     margin: 0 auto;
     z-index: 100;
@@ -756,7 +720,7 @@ section h3 {
     border-radius: 8px;
     transition: all 0.3s ease;
     min-width: 60px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .nav-item:hover {
@@ -801,16 +765,14 @@ section h3 {
 }
 
 .modal-content {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 0;
     border-radius: 20px;
     width: 90%;
     max-width: 320px;
     position: relative;
     animation: slideUp 0.3s ease;
-    box-shadow: 0 20px 60px rgba(31, 38, 135, 0.5);
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.5);
 }
 
 .close {
@@ -854,13 +816,13 @@ section h3 {
 
 .modal-body p {
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 25px;
     line-height: 1.5;
 }
 
 .modal .btn-primary {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
     color: white;
     padding: 12px 30px;
     border: none;
@@ -869,13 +831,13 @@ section h3 {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
 }
 
 .modal .btn-primary:hover {
-    background: linear-gradient(135deg, #5a67d8, #6b4e9d);
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.6);
 }
 
 /* Animations */
